@@ -1,1 +1,43 @@
+name: Generate Dynamic Banner
 
+
+on:
+schedule:
+- cron: "0 0 * * *" # генерирует каждый день
+workflow_dispatch: # ручной запуск
+push:
+branches: [ "main" ]
+
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+
+steps:
+- name: Checkout repo
+uses: actions/checkout@v3
+
+
+- name: Install Fonts
+run: sudo apt-get install -y fonts-dejavu-core
+
+
+- name: Generate Banner
+run: |
+mkdir -p assets
+convert -size 1200x300 \
+gradient:#1793d1-#0f1419 \
+-gravity center -pointsize 52 -fill white \
+-font DejaVu-Sans-Bold \
+-annotate +0+0 "limonORG02 — Arch Power" \
+assets/arch_banner.png
+
+
+- name: Commit Banner
+run: |
+git config user.name "GitHub Actions"
+git config user.email "actions@github.com"
+git add assets/arch_banner.png
+git commit -m "Auto-update banner" || echo "No changes"
+git push
