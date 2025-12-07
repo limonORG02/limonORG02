@@ -67,8 +67,8 @@
 
 ## 📫 Contacts
 
-* Email: 
-* Instagram: 
+* Email: zafarmuxamdajonov@gmail.com
+* Telegram: @limonORG
 * GitHub: [https://github.com/limonORG02](https://github.com/limonORG02)
 
 ---
