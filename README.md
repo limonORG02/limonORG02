@@ -44,7 +44,19 @@
 * 🧪 **QA Documentation: Test Cases, Bug Reports**
 
 ---
+## 📊 GitHub Stats
 
+![Stats](https://github-readme-stats.vercel.app/api?username=limonORG02\&show_icons=true\&theme=tokyonight)
+
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=limonORG02\&layout=compact\&theme=tokyonight)
+
+
+### 🔥 Contribution Snake
+
+![Snake](https://raw.githubusercontent.com/limonORG02/limonORG02/output/github-contribution-grid-snake-dark.svg)
+
+---
 ## 🎮 Interests
 
 * WoW — Hunter 🏹
